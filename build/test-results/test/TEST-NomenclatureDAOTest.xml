@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NomenclatureDAOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-09T22:30:13" hostname="DESKTOP-8F5JG97" time="2.946">
+  <properties/>
+  <testcase name="NomenclatureDAOTest" classname="NomenclatureDAOTest" time="2.946"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[ноя 10, 2020 1:30:13 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 7.0.2 by Redgate
+ноя 10, 2020 1:30:14 AM org.flywaydb.core.internal.database.base.DatabaseType createDatabase
+INFO: Database: jdbc:postgresql://127.0.0.1:5432/database1 (PostgreSQL 13.0)
+ноя 10, 2020 1:30:14 AM org.flywaydb.core.internal.command.DbClean dropDatabaseObjectsPreSchemas
+INFO: Successfully dropped pre-schema database level objects (execution time 00:00.003s)
+ноя 10, 2020 1:30:14 AM org.flywaydb.core.internal.command.DbClean cleanSchema
+INFO: Successfully cleaned schema "public" (execution time 00:00.193s)
+ноя 10, 2020 1:30:14 AM org.flywaydb.core.internal.command.DbClean dropDatabaseObjectsPostSchemas
+INFO: Successfully dropped post-schema database level objects (execution time 00:00.001s)
+ноя 10, 2020 1:30:14 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 1 migration (execution time 00:00.046s)
+ноя 10, 2020 1:30:14 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "public"."flyway_schema_history" ...
+ноя 10, 2020 1:30:15 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "public": << Empty Schema >>
+ноя 10, 2020 1:30:15 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "public" to version "1 - first migration"
+ноя 10, 2020 1:30:15 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 1 migration to schema "public" (execution time 00:00.196s)
+ноя 10, 2020 1:30:16 AM org.jooq.tools.JooqLogger info
+INFO: 
+                                      
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.14.0
+                                      
+]]></system-err>
+</testsuite>

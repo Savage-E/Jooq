@@ -1,0 +1,67 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'nu.studer.jooq' version '3.0.3'
+}
+
+group 'ru.mail'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.flywaydb', name: 'flyway-core', version: '7.0.2'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.17'
+    compile group: 'com.intellij', name: 'annotations', version: '12.0'
+    jooqRuntime 'org.postgresql:postgresql:42.2.6'
+    compile group: 'org.jooq', name: 'jooq', version: "3.14.0"
+    compile group: 'org.jooq', name: 'jooq-codegen', version: " 3.14.0"
+    compile group: 'org.jooq', name: 'jooq-meta', version: " 3.14.0"
+}
+
+ext {
+    javaMainClass = 'ru.mail.accounting.Main'
+
+}
+application {
+    mainClassName = javaMainClass
+}
+
+jooq {
+    version = '3.14.0'
+    edition = 'OSS'
+    sample(sourceSets.main) {
+        jdbc {
+            driver = 'org.postgresql.Driver'
+            url = 'jdbc:postgresql://127.0.0.1:5432/database1'
+            user = 'postgres'
+            password = ''
+        }
+        generator {
+            name = 'org.jooq.codegen.DefaultGenerator'
+            strategy {
+                name = 'org.jooq.codegen.DefaultGeneratorStrategy'
+            }
+            database {
+                name = 'org.jooq.meta.postgres.PostgresDatabase'
+                inputSchema = 'public'
+            }
+            generate {
+                relations = true
+                deprecated = false
+                records = true
+                immutablePojos = false
+                daos = false
+                fluentSetters = true
+            }
+            target {
+                packageName = 'ru.mail.accounting.db'
+                directory = 'src/main/java/'
+            }
+        }
+    }
+}

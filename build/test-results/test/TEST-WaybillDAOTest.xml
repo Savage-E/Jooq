@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WaybillDAOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-09T22:30:17" hostname="DESKTOP-8F5JG97" time="0.642">
+  <properties/>
+  <testcase name="WaybillDAOTest" classname="WaybillDAOTest" time="0.642"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.database.base.DatabaseType createDatabase
+INFO: Database: jdbc:postgresql://127.0.0.1:5432/database1 (PostgreSQL 13.0)
+ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.command.DbClean dropDatabaseObjectsPreSchemas
+INFO: Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.command.DbClean cleanSchema
+INFO: Successfully cleaned schema "public" (execution time 00:00.060s)
+ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.command.DbClean dropDatabaseObjectsPostSchemas
+INFO: Successfully dropped post-schema database level objects (execution time 00:00.000s)
+ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 1 migration (execution time 00:00.010s)
+ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "public"."flyway_schema_history" ...
+ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "public": << Empty Schema >>
+ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "public" to version "1 - first migration"
+ноя 10, 2020 1:30:17 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 1 migration to schema "public" (execution time 00:00.184s)
+]]></system-err>
+</testsuite>
